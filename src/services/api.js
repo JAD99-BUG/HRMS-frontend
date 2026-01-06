@@ -1,11 +1,20 @@
 import axios from 'axios';
 
+const getBaseURL = () => {
+  const envUrl = import.meta.env.VITE_API_URL || 'https://hrms-backend-9blo.onrender.com/api';
+  // Remove trailing slash
+  const cleanUrl = envUrl.replace(/\/$/, '');
+  // Ensure it ends with /api
+  return cleanUrl.endsWith('/api') ? cleanUrl : `${cleanUrl}/api`;
+};
+
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'https://hrms-backend-9blo.onrender.com/api',
+  baseURL: getBaseURL(),
   headers: {
     'Content-Type': 'application/json'
   }
 });
+
 
 export const authAPI = {
   login: (data) => api.post('/auth/login', data)
