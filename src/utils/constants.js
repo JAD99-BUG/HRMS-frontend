@@ -1,0 +1,40 @@
+export const BLOOD_TYPES = ['A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-'];
+
+export const RoleType = {
+  ADMIN: 'ADMIN',
+  HR_MANAGER: 'HR_MANAGER',
+  HR_ASSISTANT: 'HR_ASSISTANT',
+  OWNER: 'OWNER',
+  MANAGER: 'MANAGER'
+};
+
+export const EmployeeStatus = {
+  ACTIVE: 'ACTIVE',
+  INACTIVE: 'INACTIVE',
+  SUSPENDED: 'SUSPENDED',
+  TERMINATED: 'TERMINATED'
+};
+
+export const LeaveStatus = {
+  PENDING: 'PENDING',
+  APPROVED: 'APPROVED',
+  REJECTED: 'REJECTED',
+  CANCELLED: 'CANCELLED'
+};
+
+export const AttendanceMark = {
+  PRESENT: 'PRESENT',
+  ABSENT: 'ABSENT',
+  LATE: 'LATE',
+  EARLY_LEAVE: 'EARLY_LEAVE',
+  HALF_DAY: 'HALF_DAY',
+  ANNUAL_LEAVE: 'ANNUAL_LEAVE',
+  SICK_LEAVE: 'SICK_LEAVE',
+  OFF: 'OFF',
+  PERMISSION: 'PERMISSION',
+  PUBLIC_HOLIDAY: 'PUBLIC_HOLIDAY'
+};
+
+
+
+
